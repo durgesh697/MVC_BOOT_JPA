@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.dt.test.service.ToDoServiceTest">
+        <methods>
+          <include name="testGetAllToDo"/>
+          <include name="removeToDo"/>
+          <include name="setup"/>
+          <include name="saveToDo"/>
+          <include name="testGetToDoById"/>
+        </methods>
+      </class> <!-- com.dt.test.service.ToDoServiceTest -->
+      <class name="com.dt.test.controller.ToDoControllerTest">
+        <methods>
+          <include name="verifyInvalidToDoId"/>
+          <include name="verifyUpdateToDo"/>
+          <include name="verifyMalformedSaveToDo"/>
+          <include name="verifyDeleteToDo"/>
+          <include name="verifyInvalidToDoIdToDelete"/>
+          <include name="verifyInvalidToDoArgument"/>
+          <include name="verifyInvalidToDoUpdate"/>
+          <include name="setup"/>
+          <include name="verifyToDoById"/>
+          <include name="verifyNullToDo"/>
+          <include name="verifyAllToDoList"/>
+        </methods>
+      </class> <!-- com.dt.test.controller.ToDoControllerTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
