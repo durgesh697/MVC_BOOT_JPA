@@ -28,6 +28,7 @@ public class ToDoController {
 
 	static {
 		logger.info("controller class");
+
 	}
 
 	@Autowired

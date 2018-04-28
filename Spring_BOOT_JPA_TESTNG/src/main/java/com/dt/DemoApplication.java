@@ -28,16 +28,16 @@ public class DemoApplication {
 		 * Using the "CommandLineRunner" Bean, it will 1st place all the data
 		 * into the dB then it will fetch it from there
 		 */
-		 @Bean
-		 public CommandLineRunner setup(ToDoRepository toDoRepository) {
-		 return null;
-		 return (args) -> {
-		 toDoRepository.save(new ToDo("One", true));
-		 toDoRepository.save(new ToDo("Two", true));
-		 toDoRepository.save(new ToDo("Three", false));
-		 toDoRepository.save(new ToDo("Four", true));
-		 logger.info("The sample data has been generated");
-		 };
-		 }
+	@Bean
+	public CommandLineRunner setup(ToDoRepository toDoRepository) {
+		return null;
+		return (args) -> {
+			toDoRepository.save(new ToDo("One", true));
+			toDoRepository.save(new ToDo("Two", true));
+			toDoRepository.save(new ToDo("Three", false));
+			toDoRepository.save(new ToDo("Four", true));
+			logger.info("The sample data has been generated");
+		};
+
 	}
 }
